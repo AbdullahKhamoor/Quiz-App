@@ -7,7 +7,7 @@ const App = () => {
    <>
    {/* <Routes>
    <Route  element = {<Quiz />} />
-   </Routes> */}
+  </Routes> */}
     <Quiz />
    </>
   )
