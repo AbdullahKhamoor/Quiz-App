@@ -3,10 +3,9 @@ import Quiz from './Components/Quiz Component/Quiz'
 
 const App = () => {
   return (
-   <>
-   
-    <Quiz />
-   </>
+    <>
+      <Quiz />
+    </>
   )
 }
 

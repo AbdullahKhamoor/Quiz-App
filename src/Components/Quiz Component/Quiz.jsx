@@ -21,14 +21,14 @@ const Quiz = () => {
 
         if (lock === false) {
             if (question.ans === ans) {
-                e.target.classList.add("correct");
+                e.target.classList.add("correct");                 
                 setLock(true)
                 setScore(a => a+1)
             }
             else {
                 e.target.classList.add("wrong");
                 setLock(true)
-                option_array[question.ans - 1].current.classList.add("correct")
+                option_array[question.ans -1 ].current.classList.add("correct")         // Since JavaScript arrays use 0-based indexing, we subtract 1.
             }
         }
 
@@ -38,7 +38,7 @@ const Quiz = () => {
     const next = () => {
         if (lock === true) {
 
-            if (index === data.length - 1) {
+            if (index === data.length -1 ) {
                 setResult(true)
                 return 0;
             }
